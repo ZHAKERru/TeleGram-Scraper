@@ -78,7 +78,7 @@ def merge_csv():
 def update_tool():
 	import requests as r
 	banner()
-	source = r.get("https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/.image/.version")
+	source = r.get("https://raw.githubusercontent.com/ZHAKERru/TG-Inviter_Scraper_Spamer/7f60b778f02605338835a94a99e2e6a22cc53faf/.update/.version?token=AUSKBSNJDMHWX2SCK35YZUTA4M5V2")
 	if source.text == '3':
 		print(gr+'['+cy+'+'+gr+']'+cy+' alredy latest version')
 	else:
@@ -86,10 +86,10 @@ def update_tool():
 		os.system('rm *.py');time.sleep(3)
 		print(gr+'['+cy+'+'+gr+']'+cy+' getting latest files ...')
 		os.system("""
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/add2group.py
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/scraper.py
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/setup.py
-			curl -s -O https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/smsbot.py
+			curl -s -O https://raw.githubusercontent.com/ZHAKERru/TG-Inviter_Scraper_Spamer/main/inviter.py?token=AUSKBSJK7E3JAUSLSDCQCR3A4M546
+			curl -s -O https://raw.githubusercontent.com/ZHAKERru/TG-Inviter_Scraper_Spamer/main/parser.py?token=AUSKBSLZAVB4CIDQAT7NC7TA4M57S
+			curl -s -O https://raw.githubusercontent.com/ZHAKERru/TG-Inviter_Scraper_Spamer/main/setup.py?token=AUSKBSOBM5DPZQA3YJ3VOQDA4M57U
+			curl -s -O https://raw.githubusercontent.com/ZHAKERru/TG-Inviter_Scraper_Spamer/main/spamer.py?token=AUSKBSM5PKFYJ7DIXDBMHWLA4M57Y
 			chmod 777 *.py
 			""");time.sleep(3)
 		print(gr+'\n['+cy+'+'+gr+']'+cy+' update compled.\n')
